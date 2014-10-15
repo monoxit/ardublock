@@ -8091,6 +8091,7 @@
 				<BlockGenusMember>pin-read-analog</BlockGenusMember>
 				<BlockGenusMember>pin-write-digital</BlockGenusMember>
 				<BlockGenusMember>pin-write-analog</BlockGenusMember>
+				<BlockGenusMember>pin-read-digital-pullup</BlockGenusMember>
 				<BlockGenusMember>df_servo</BlockGenusMember>
 				<BlockGenusMember>df_360_degree_rotation_motor</BlockGenusMember>
 				<BlockGenusMember>ultrasonic</BlockGenusMember>

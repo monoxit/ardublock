@@ -9,8 +9,7 @@ public class DigitalInputPullBlock extends DigitalInputBlock
 	public static final String ARDUBLOCK_DIGITAL_READ_INPUT_PULLUP_DEFINE = 
 "void __ardublockDigitalInputPullup(int pinNumber)\n" +
 "{\n" +
-"pinMode(pinNumber, INPUT);\n" +
-"digitalWrite(pinNumber, HIGH);\n" +
+"pinMode(pinNumber, INPUT_PULLUP);\n" +
 "}\n" +
 "\n";
 	
@@ -24,8 +23,7 @@ public class DigitalInputPullBlock extends DigitalInputBlock
 	{
 		String number;
 		number = translatorBlock.toCode();
-		translator.addInputPin(number.trim());
-		translator.addSetupCommand("digitalWrite(" + number + ", HIGH);");
+		translator.addSetupCommand("pinMode(" + number + ", INPUT_PULLUP);");
 		return "" ;
 	}
 	
