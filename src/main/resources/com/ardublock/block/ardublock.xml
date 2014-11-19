@@ -8077,6 +8077,8 @@
 				<BlockGenusMember>program</BlockGenusMember>
 				<BlockGenusMember>if</BlockGenusMember>
 				<BlockGenusMember>ifelse</BlockGenusMember>
+				<BlockGenusMember>delay</BlockGenusMember>
+				<BlockGenusMember>delay_microseconds</BlockGenusMember>
 				<BlockGenusMember>while</BlockGenusMember>
 				<BlockGenusMember>do_while</BlockGenusMember>
 				<BlockGenusMember>repeat_times</BlockGenusMember>
@@ -8157,8 +8159,6 @@
 				<BlockGenusMember>message</BlockGenusMember>
 			</BlockDrawer>
 			<BlockDrawer button-color="205 133 63" name="bd.utilities" type="factory">
-				<BlockGenusMember>delay</BlockGenusMember>
-				<BlockGenusMember>delay_microseconds</BlockGenusMember>
 				<BlockGenusMember>millis</BlockGenusMember>
 				<BlockGenusMember>servo_default</BlockGenusMember>
 				<BlockGenusMember>ultrasonic</BlockGenusMember>
@@ -8490,7 +8490,7 @@
 				<BlockGenusMember>df_romeo_motors</BlockGenusMember>
 				<BlockGenusMember>df_romeo_motor</BlockGenusMember>
 				<BlockGenusMember>df_romeo_motor_stop</BlockGenusMember>
-			</BlockDrawer> 	
+			</BlockDrawer>
 			<!-- keenlon -->			
 			<BlockDrawer button-color="20 150 30" name="bd.ke-keenlon">
 				<BlockGenusMember>ke-motor-run</BlockGenusMember>
