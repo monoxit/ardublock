@@ -7807,7 +7807,7 @@
 		<!-- ************************************* MONOxIT *********************************** -->
 		<BlockGenus name="mi100_drive" kind="command" color="255 102 0" initlabel="bg.mi100_drive">
 			<description>
-				<text>MI100 Forward</text>
+				<text>Drive MI100</text>
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_millis">
@@ -7818,7 +7818,7 @@
     
     <BlockGenus name="mi100_reverse_drive" kind="command" color="255 102 0" initlabel="bg.mi100_reverse_drive">
 			<description>
-				<text>MI100 Backward</text>
+				<text>Reverse drive MI100</text>
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_millis">
@@ -7829,7 +7829,7 @@
     
     <BlockGenus name="mi100_spin" kind="command" color="255 102 0" initlabel="bg.mi100_spin">
 			<description>
-				<text>MI100 Spin Right</text>
+				<text>Spin MI100</text>
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_millis">
@@ -7840,7 +7840,7 @@
  
     <BlockGenus name="mi100_reverse_spin" kind="command" color="255 102 0" initlabel="bg.mi100_reverse_spin">
 			<description>
-				<text>MI100 Spin Left</text>
+				<text>Reverse spin MI100</text>
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_millis">
@@ -7851,7 +7851,7 @@
 
     <BlockGenus name="mi100_blink" kind="command" color="255 102 0" initlabel="bg.mi100_blink">
 			<description>
-				<text>MI100 Blink LED</text>
+				<text>Blink LED</text>
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_red_duty">
@@ -7869,9 +7869,9 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-    <BlockGenus name="mi100_tone" kind="command" color="255 102 0" initlabel="bg.mi100_tone">
+    <BlockGenus name="mi100_beep" kind="command" color="255 102 0" initlabel="bg.mi100_beep">
 			<description>
-				<text>MI100 Tone</text>
+				<text>Beep</text>
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_freq">
@@ -8177,7 +8177,7 @@
         <BlockGenusMember>mi100_spin</BlockGenusMember>
         <BlockGenusMember>mi100_reverse_spin</BlockGenusMember>
         <BlockGenusMember>mi100_blink</BlockGenusMember>
-        <BlockGenusMember>mi100_tone</BlockGenusMember>
+        <BlockGenusMember>mi100_beep</BlockGenusMember>
 			</BlockDrawer>
 			<!-- MONOxIT MI100 ^ -->
 			
