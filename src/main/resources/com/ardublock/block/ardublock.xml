@@ -7803,6 +7803,88 @@
 			</BlockConnectors>
 		</BlockGenus>
 
+		
+		<!-- ************************************* MONOxIT *********************************** -->
+		<BlockGenus name="mi100_drive" kind="command" color="255 102 0" initlabel="bg.mi100_drive">
+			<description>
+				<text>MI100 Forward</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_millis">
+					<DefaultArg genus-name="number" label="200" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+    
+    <BlockGenus name="mi100_reverse_drive" kind="command" color="255 102 0" initlabel="bg.mi100_reverse_drive">
+			<description>
+				<text>MI100 Backward</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_millis">
+					<DefaultArg genus-name="number" label="200" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+    
+    <BlockGenus name="mi100_spin" kind="command" color="255 102 0" initlabel="bg.mi100_spin">
+			<description>
+				<text>MI100 Spin Right</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_millis">
+					<DefaultArg genus-name="number" label="200" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>    
+ 
+    <BlockGenus name="mi100_reverse_spin" kind="command" color="255 102 0" initlabel="bg.mi100_reverse_spin">
+			<description>
+				<text>MI100 Spin Left</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_millis">
+					<DefaultArg genus-name="number" label="200" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus> 
+
+    <BlockGenus name="mi100_blink" kind="command" color="255 102 0" initlabel="bg.mi100_blink">
+			<description>
+				<text>MI100 Blink LED</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_red_duty">
+					<DefaultArg genus-name="number" label="50" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_green_duty">
+					<DefaultArg genus-name="number" label="50" />
+				</BlockConnector>        
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_blue_duty">
+					<DefaultArg genus-name="number" label="50" />
+				</BlockConnector>        
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_millis">
+					<DefaultArg genus-name="number" label="200" />
+				</BlockConnector>        
+			</BlockConnectors>
+		</BlockGenus>
+
+    <BlockGenus name="mi100_tone" kind="command" color="255 102 0" initlabel="bg.mi100_tone">
+			<description>
+				<text>MI100 Tone</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_freq">
+					<DefaultArg genus-name="number" label="440" />
+				</BlockConnector>
+        <BlockConnector connector-type="number" connector-kind="socket" label="bc.mi100_millis">
+					<DefaultArg genus-name="number" label="500" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus> 
+    
+		<!-- ************************************* MONOxIT ^*********************************** -->
+		
 	</BlockGenuses>
 
 	<BlockFamilies>
@@ -8088,6 +8170,17 @@
 				<BlockGenusMember>subroutine</BlockGenusMember>
 				<BlockGenusMember>subroutine-ref</BlockGenusMember>
 			</BlockDrawer>
+			<!-- MONOxIT MI100 -->
+			<BlockDrawer button-color="255 102 0" name="bd.mi100" type="factory">
+				<BlockGenusMember>mi100_drive</BlockGenusMember>
+        <BlockGenusMember>mi100_reverse_drive</BlockGenusMember>
+        <BlockGenusMember>mi100_spin</BlockGenusMember>
+        <BlockGenusMember>mi100_reverse_spin</BlockGenusMember>
+        <BlockGenusMember>mi100_blink</BlockGenusMember>
+        <BlockGenusMember>mi100_tone</BlockGenusMember>
+			</BlockDrawer>
+			<!-- MONOxIT MI100 ^ -->
+			
 			<BlockDrawer button-color="29 152 155" name="bd.pins" type="factory">
 				<BlockGenusMember>pin-read-digital</BlockGenusMember>
 				<BlockGenusMember>pin-read-analog</BlockGenusMember>
