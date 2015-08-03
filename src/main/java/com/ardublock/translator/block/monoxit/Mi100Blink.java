@@ -30,11 +30,11 @@ public class Mi100Blink extends TranslatorBlock
     TranslatorBlock tbDurationBlock = this.getRequiredTranslatorBlockAtSocket(3);
 		String duration = tbDurationBlock.toCode();
 		
-		if (Integer.parseInt(duration) > 1000 ) 
-		{
+		//if (Integer.parseInt(duration) > 1000 ) 
+		//{
 			//throw new BlockException(this.blockId, "the duration must not be over 1000");
 			//duration = "1000";
-		}
+		//}
 		
     String instanceName = "ROBO";
     

@@ -21,11 +21,11 @@ public class Mi100ReverseSpin extends TranslatorBlock
 		TranslatorBlock tbDurationBlock = this.getRequiredTranslatorBlockAtSocket(0);
 		String duration = tbDurationBlock.toCode();
 		
-		if (Integer.parseInt(duration) > 1000 ) 
-		{
+		//if (Integer.parseInt(duration) > 1000 ) 
+		//{
 			//throw new BlockException(this.blockId, "the duration must not be over 1000");
 			//duration = "1000";
-		}
+		//}
 		
     String instanceName = "ROBO";
     

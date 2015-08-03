@@ -23,11 +23,11 @@ public class Mi100Beep extends TranslatorBlock
 		TranslatorBlock tbDurationBlock = this.getRequiredTranslatorBlockAtSocket(1);
 		String duration = tbDurationBlock.toCode();
 		
-		if (Integer.parseInt(duration) > 1000 ) 
-		{
+		//if (Integer.parseInt(duration) > 1000 ) 
+		//{
 			//throw new BlockException(this.blockId, "the duration must not be over 1000");
 			//duration = "1000";
-		}
+		//}
 		
     String instanceName = "ROBO";
     
